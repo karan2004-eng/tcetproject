@@ -1,0 +1,18 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(9, 0, 128);
+}
+.home > div{
+    border-radius: 10px;
+    height: 180px;
+    padding: 30px;
+    margin: 110px;
+}
+.main{
+    border: 3px double blacks;
+    text-align: center;
+    background: linear-gradient(to top, purple,violet);
+    font-size: 20px;
+}
