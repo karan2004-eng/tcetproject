@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - QUIZ </title>
+    <title>Welcome to Science Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
-<body class="home">
+<body class="background">
     <div>
-    Welcome to Science QUIZ <br>
-    It consist of general Science question releated to astronomy, physics, maths and even chemistry. <br>
-    To start quiz click the button below. <br>
-    <button><a href="Credenital.html">Click here</a></button>
+        <h1 class="head">Welcome to Science QUIZ</h1>
+        <div class="welcome_content">
+        It consists of general Science questions related to astronomy, physics, maths, and even chemistry.<br>
+        To start the quiz, please enter your name below and click "Start Quiz".
+        <form action="quiz.html" class="form-check" method="get">
+            <label><br>
+                <input type="text" class="form form-control" name="userName" placeholder="Full name" required>
+            </label>
+            <button class="btn btn-success" type="submit">Start Quiz</button>
+        </form>
     </div>
-<script src="script.js"></script>
+</div>
 </body>
 </html>
