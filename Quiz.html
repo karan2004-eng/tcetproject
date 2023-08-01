@@ -6,86 +6,129 @@
     <title>Quiz - Science Quiz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body class="background">
     <div>
         <h1 class="head">Science Quiz</h1>
-        <form action="result.html" method="post" class="form-check">
-                <div class="question form-check" >
-                    What is chemical name of sugar?<br>
-                    <input type="radio"  name="q1" value="a" class="form-check-input">Fructose<br>
-                    <input type="radio"  name="q1" value="b" class="form-check-input">Sucrose<br>
-                    <input type="radio"  name="q1" value="c"class="form-check-input"> Maltose<br>
-                    <input type="radio"  name="q1" value="d"class="form-check-input">Lactose<br>
-                </div><br>
-                <div class="question">
-                    What is chemical name of soap?<br>
-                    <input type="radio"  name="q2" value="a" class="form-check-input">Sodium alkenoates<br>
-                    <input type="radio"  name="q2" value="b" class="form-check-input">Sodium alkanoic acid<br>
-                    <input type="radio" name="q2" value="c" class="form-check-input">Sodium alkyl halide<br>
-                    <input type="radio"  name="q2" value="d" class="form-check-input">Sodium  alkanone<br>
-                </div><br>
-                <div class="question">
-                    What is the common ingredient of all toothpaste??<br>
-                    <input type="radio"  name="q3" value="a" class="form-check-input">Sodium Lauryl Sulphate<br>
-                    <input type="radio"  name="q3" value="b" class="form-check-input">Sodium Lauryl phosphate<br>
-                    <input type="radio" name="q3" value="c" class="form-check-input">Calcium carbonate<br>
-                    <input type="radio"  name="q3" value="d" class="form-check-input">Calcium bi carbonate<br>
-                </div><br>
-                <div class="question">
-                    Which compound in cigrates which is responsible for cancer?<br>
-                    <input type="radio"  name="q4" value="a" class="form-check-input">Tar<br>
-                    <input type="radio" name="q4" value="b" class="form-check-input">Nicotine<br>
-                    <input type="radio" name="q4" value="c" class="form-check-input">Nitrosamines <br>
-                    <input type="radio" name="q4" value="d" class="form-check-input">Carbon monoxide<br>
-                </div><br>
-                <div class="question">
-                    What is the name of the compound that makes your milk sweeter?<br>
-                    <input type="radio"  name="q5" value="a" class="form-check-input">Urease<br>
-                    <input type="radio"  name="q5" value="b" class="form-check-input">Maltose<br>
-                    <input type="radio" name="q5" value="c" class="form-check-input">Lactose<br>
-                    <input type="radio" name="q5" value="d" class="form-check-input">Glucose<br>
-                </div><br>
-                <div class="question">  
-                    Working of rocket is based on which law of motion. <br>
-                    <input type="radio" name="q6" value="a" class="form-check-input">Law of inertia<br>
-                    <input type="radio" name="q6" value="b" class="form-check-input">Law of conservation of momentum<br>
-                    <input type="radio" name="q6" value="c" class="form-check-input">Law of conservation of energy<br>
-                    <input type="radio" name="q6" value="d" class="form-check-input">Law of reaction<br>
-                </div><br>
-                <div class="question">
-                    Which is the strongest force among all?<br>
-                    <input type="radio" name="q7" value="a" class="form-check-input">Gravitational force<br>
-                    <input type="radio" name="q7" value="b"class="form-check-input">Frictional force<br>
-                    <input type="radio" name="q7" value="c"class="form-check-input">Strong nuclear force<br>
-                    <input type="radio" name="q7" value="d"class="form-check-input">Weak nuclear force<br>
-                </div><br>
-                <div class="question">
-                    Name the smallest plannet among given planets?<br>
-                    <input type="radio" name="q8" value="a"class="form-check-input">Earth<br>
-                    <input type="radio" name="q8" value="b"class="form-check-input">uranus<br>
-                    <input type="radio" name="q8" value="c"class="form-check-input">Mars<br>
-                    <input type="radio" name="q8" value="d"class="form-check-input">mercury<br>
-                </div><br>
-                <div class="question">
-                    Which star is nearest to our sun?<br>
-                    <input type="radio" name="q9" value="a"class="form-check-input">Proxima centaur<br>
-                    <input type="radio" name="q9" value="b"class="form-check-input">Alpha centaur<br>
-                    <input type="radio" name="q9" value="c"class="form-check-input">Gamma centaur<br>
-                    <input type="radio" name="q9" value="d"class="form-check-input">Delta Provonis<br>
-                </div><br>
+        <form action="result.html" method="post" class="form-check" id="myForm">
+            <div class="question" >
+                What is chemical name of sugar?<br>
+                <input type="radio"  name="q1" value="a" class="form-check-input">Fructose<br>
+                <input type="radio"  name="q1" value="b" class="form-check-input">Sucrose<br>
+                <input type="radio"  name="q1" value="c"class="form-check-input"> Maltose<br>
+                <input type="radio"  name="q1" value="d"class="form-check-input">Lactose<br>
+            </div><br>
+            <div class="question">
+                What is chemical name of soap?<br>
+                <input type="radio"  name="q2" value="a" class="form-check-input">Sodium alkenoates<br>
+                <input type="radio"  name="q2" value="b" class="form-check-input">Sodium alkanoic acid<br>
+                <input type="radio" name="q2" value="c" class="form-check-input">Sodium alkyl halide<br>
+                <input type="radio"  name="q2" value="d" class="form-check-input">Sodium  alkanone<br>
+            </div><br>
+            <div class="question">
+                What is the common ingredient of all toothpaste??<br>
+                <input type="radio"  name="q3" value="a" class="form-check-input">Sodium Lauryl Sulphate<br>
+                <input type="radio"  name="q3" value="b" class="form-check-input">Sodium Lauryl phosphate<br>
+                <input type="radio" name="q3" value="c" class="form-check-input">Calcium carbonate<br>
+                <input type="radio"  name="q3" value="d" class="form-check-input">Calcium bi carbonate<br>
+            </div><br>
+            <div class="question">
+                Which compound in cigrates which is responsible for cancer?<br>
+                <input type="radio"  name="q4" value="a" class="form-check-input">Tar<br>
+                <input type="radio" name="q4" value="b" class="form-check-input">Nicotine<br>
+                <input type="radio" name="q4" value="c" class="form-check-input">Nitrosamines <br>
+                <input type="radio" name="q4" value="d" class="form-check-input">Carbon monoxide<br>
+            </div><br>
+            <div class="question">
+                What is the name of the compound that makes your milk sweeter?<br>
+                <input type="radio"  name="q5" value="a" class="form-check-input">Urease<br>
+                <input type="radio"  name="q5" value="b" class="form-check-input">Maltose<br>
+                <input type="radio" name="q5" value="c" class="form-check-input">Lactose<br>
+                <input type="radio" name="q5" value="d" class="form-check-input">Glucose<br>
+            </div><br>
+            <div class="question">  
+                Working of rocket is based on which law of motion. <br>
+                <input type="radio" name="q6" value="a" class="form-check-input">Law of inertia<br>
+                <input type="radio" name="q6" value="b" class="form-check-input">Law of conservation of momentum<br>
+                <input type="radio" name="q6" value="c" class="form-check-input">Law of conservation of energy<br>
+                <input type="radio" name="q6" value="d" class="form-check-input">Law of reaction<br>
+            </div><br>
+            <div class="question">
+                Which is the strongest force among all?<br>
+                <input type="radio" name="q7" value="a" class="form-check-input">Gravitational force<br>
+                <input type="radio" name="q7" value="b"class="form-check-input">Frictional force<br>
+                <input type="radio" name="q7" value="c"class="form-check-input">Strong nuclear force<br>
+                <input type="radio" name="q7" value="d"class="form-check-input">Weak nuclear force<br>
+            </div><br>
+            <div class="question">
+                Name the smallest plannet among given planets?<br>
+                <input type="radio" name="q8" value="a"class="form-check-input">Earth<br>
+                <input type="radio" name="q8" value="b"class="form-check-input">uranus<br>
+                <input type="radio" name="q8" value="c"class="form-check-input">Mars<br>
+                <input type="radio" name="q8" value="d"class="form-check-input">mercury<br>
+            </div><br>
+            <div class="question">
+                Which star is nearest to our sun?<br>
+                <input type="radio" name="q9" value="a"class="form-check-input">Proxima centaur<br>
+                <input type="radio" name="q9" value="b"class="form-check-input">Alpha centaur<br>
+                <input type="radio" name="q9" value="c"class="form-check-input">Gamma centaur<br>
+                <input type="radio" name="q9" value="d"class="form-check-input">Delta Provonis<br>
+            </div><br>
                 <div class="question">
                     What is age of our planet?<br>
                     <input type="radio"  name="q10" value="a" class="form-check-input">4.5 billion years<br>
-                    <input type="radio"  name="q10" value="b"class="form-check-input">7 billion years<br>
-                    <input type="radio" name="q10" value="c"class="form-check-input">7.5 billion years<br>
-                    <input type="radio"  name="q10" value="d"class="form-check-input">4 billion years<br><hr>
+                    <input type="radio"  name="q10" value="b" class="form-check-input">7 billion years<br>
+                    <input type="radio" name="q10" value="c" class="form-check-input">7.5 billion years<br>
+                    <input type="radio"  name="q10" value="d" class="form-check-input">4 billion years<br><hr>
                     <button class="btn btn-success" type="submit">Submit</button>
                     <button class="btn btn-warning" type="reset">Reset</button>
                 </div><br>
             <br>
         </form>
+        <div id="scoreCard" class="score">
+            Congratualations,you scored 
+            <h1 id="score" style="font-size: 50px;">00</h1>
+            points
+        </div>
     </div>
+    <script>
+        document.getElementById("myForm").addEventListener('submit', function(event) {
+            // Prevent form submission by default
+            event.preventDefault();
+
+            // Check if any input field is empty
+            const inputFields = document.querySelectorAll('input');
+            let isEmptyField = false;
+            inputFields.forEach(function(input) {
+                if (input.type === 'radio' && !document.querySelector(`input[name="${input.name}"]:checked`)) {
+                    isEmptyField = true;
+                }
+            });
+
+            // If any field is empty, show an alert
+            if (isEmptyField) {
+                alert('Please fill in all the required fields.');
+            } else {
+                // Calculate the score
+                const correctAnswers = ['b', 'a', 'a', 'c', 'c', 'a', 'c', 'd', 'a', 'a'];
+                let score = 0;
+                for (let i = 1; i <= 10; i++) {
+                    const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (userAnswer && userAnswer.value === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+
+                // Hide the form and display the score card
+                document.getElementById("myForm").style.display ="none";
+                document.getElementById("scoreCard").style.display = "block";
+                document.getElementById("score").innerText = score;
+            }
+        });
+    </script>
+
 </body>
 </html>
